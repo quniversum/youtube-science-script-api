@@ -1,0 +1,49 @@
+openapi: 3.0.3
+info:
+  title: Science Content API
+  description: An API for retrieving structured content from science communication video scripts.
+  version: 1.0.0
+servers:
+  - url: https://api.science-scripts.com/v1
+paths:
+  /script:
+    get:
+      summary: Get the Featured Script
+      description: Retrieves the full content and metadata for the featured science script.
+      tags:
+        - Script Content
+      responses:
+        "200":
+          description: The full script object was returned successfully.
+          content:
+            application/json:
+              schema:
+                # The data model for our script is defined right here.
+                type: object
+                properties:
+                  title:
+                    type: string
+                    example: "The Terrifying Reason They Shut Down the Large Hadron Collider"
+                  author:
+                    type: string
+                    example: "Your Name"
+                  videoUrl:
+                    type: string
+                    format: uri
+                    example: "https://www.youtube.com/watch?v=your-video-id"
+                  views:
+                    type: integer
+                    example: 20000
+                  publicationDate:
+                    type: string
+                    format: date
+                    example: "2024-10-26"
+                  sections:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        heading:
+                          type: string
+                        paragraph:
+                          type: string
