@@ -1,5 +1,4 @@
-# Science Content API - A Technical Communication Project
-
+# The Science Content API
 This project showcases a practical application of API documentation and technical writing, using a real-world science script from a YouTube video as the source content.
 
 ## Project Highlights
