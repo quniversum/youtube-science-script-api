@@ -1,24 +1,15 @@
-# The Science Content API
-This project showcases a practical application of API documentation and technical writing, using a real-world science script from a YouTube video as the source content.
+# Science Content API
 
-## Project Highlights
+A REST-style API that delivers structured scientific scripts for educational content platforms. This API separates content (headings, paragraphs) from metadata (views, author), allowing developers to build custom frontend displays for long-form articles.
 
-*   **Real-World Content:** The data source is the script for the video "The Terrifying Reason They Shut Down the Large Hadron Collider," which has over 20,000 views.
-*   **Blended Skills:** This project combines STEM scriptwriting with API documentation.
-## Project Components
+**[View Live Demo](https://quniversum.github.io/youtube-science-script-api/)** | **[View OpenAPI Spec](openapi.yaml)**
 
-### 1. The API Specification (`openapi.yaml`)
+## 🚀 Quick Start
 
-The formal documentation for the API, written in YAML using the OpenAPI 3.0 specification.
+You can fetch the script data directly using JavaScript or cURL.
 
-*   **Endpoint:** Defines a simple `GET /script` endpoint to retrieve the full script object.
-*   **Data Model:** Includes a detailed schema for the `Script` resource, breaking the content into structured metadata (`title`, `author`, `views`) and a body composed of distinct sections (`heading`, `paragraph`).
-
-### 2. The Interactive Live Demo
-
-A live webpage that simulates a client application calling the API and rendering the script as a clean, readable article.
-
-*   **Technologies:** Built with semantic HTML, modern CSS for styling, and JavaScript to dynamically load the content from a structured data object.
-*   **Functionality:** On page load, the JavaScript parses the script data and populates the title, metadata, and section content, demonstrating a real-world use case for the API.
-
----
+### Fetch with JavaScript
+```javascript
+fetch('https://quniversum.github.io/youtube-science-script-api/script.json')
+  .then(response => response.json())
+  .then(data => console.log(data));
