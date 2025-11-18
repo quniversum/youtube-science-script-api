@@ -7,7 +7,7 @@ const scriptData = {
   publicationDate: "2025-08-12",
   sections: [
     {
-      // paragraph:
+      paragraph:
         "Before the most powerful machine ever built by human hands was allowed to fire its first shot, a question had to be answered. It was not a question of budget, or engineering, or politics. It was a question of existence itself. The question was simple, and its implications were absolute: when we turn this machine on, will it destroy the world? This is not an exaggeration for effect. This was a genuine, scientifically grounded concern that had to be addressed before the Large Hadron Collider could collide its first particles. And at the heart of that concern was a theoretical object so terrifying, it sounds like something torn from the pages of cosmic horror. A particle that could eat the Earth from the inside out. They called it the strangelet.",
     },
     {
